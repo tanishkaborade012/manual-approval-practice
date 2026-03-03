@@ -1,0 +1,12 @@
+name: Manual approval
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: development
+    steps:
+      - name: Deploy steps
+        run: echo "Deploying to production" 
